@@ -1,0 +1,9 @@
+# Docker Installation For Liunx
+
+1. curl -sSL https://get.docker.com/ | sh
+2. sudo systemctl start docker
+
+
+# For other operating systems
+
+visit this --> https://docs.docker.com/get-docker/

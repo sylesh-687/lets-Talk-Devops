@@ -1,0 +1,11 @@
+docker help
+docker <command> help
+docker container help
+docker image help
+docker container run hello-world
+docker container ls
+docker image pull nginx
+docker images
+docker container run -d --name nginx -p 8080:80
+docker container stop nginx
+docker container rm nginx
