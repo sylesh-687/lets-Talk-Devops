@@ -1,0 +1,24 @@
+>> sudo apt-add-repository ppa:ansible/ansible
+>> sudo apt update
+>> sudo apt install ansible
+
+
+
+# Lets Start
+
+# Make a Dir 
+
+>> mkdir ansible-demo
+>> cd ansible-demo
+>> ansible --version
+
+# Lets Create Our first Invenotry
+
+>> echo "localhost" >> hosts
+
+# adhoc command structure
+
+>> ansible <pattern> -m <module> -a <arguments>
+>> ansible -i hosts all ping
+
+
