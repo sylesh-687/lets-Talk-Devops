@@ -10,4 +10,4 @@ COPY files/default.conf /etc/nginx/conf.d/default.conf
 ADD files/html.tar.gz /usr/share/nginx
 EXPOSE 80/tcp
 ENTRYPOINT ["nginx"]
-CMD ["-g","daemon off"]
+CMD ["-g","daemon off;"]
