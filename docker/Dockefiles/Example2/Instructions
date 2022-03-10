@@ -1,0 +1,24 @@
+1. mkdir files
+2. wget  https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-minirootfs-3.15.0-x86_64.tar.gz
+3. ls 
+
+
+#After Creating Docker file
+# Build Image out of the Docker file
+# Make sure you are in same dir where docker file Installation
+
+0. docker image build -t <repo>:tag .
+
+Ex:
+
+1. docker image build -t sylesh:alpine_scratch .
+
+2. docker image ls
+
+3. docker run -ti --name alpine-test sylesh:alpine_scratch /bin/sh
+
+
+# check the os version
+
+cat /etc/*release
+

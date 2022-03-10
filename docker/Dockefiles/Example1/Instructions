@@ -1,0 +1,8 @@
+# After Creating Docker file 
+
+1. docker image build -t sylesh:dockerfile-example .
+2. docker image ls
+3. docker container run -d --name dockerfile-example -p 8080:80 sylesh:dockerfile-example
+4. docker container ls
+5. docker container stop sylesh:dockerfile-example
+6. docker container rm sylesh:dockerfile-example
