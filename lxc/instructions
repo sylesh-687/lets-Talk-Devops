@@ -1,0 +1,39 @@
+# Commands
+
+# Install LXD
+>>   sudo apt install lxd -y
+
+# Intialize LXD
+>> lxd init
+
+>> lxc --help
+>> lxd --version
+>> lxc list
+
+# Launch Ubuntu Container
+
+>> lxc launch ubuntu: 
+>> lxc list
+
+>> lxc exec <container> bash 
+>> lsb_release -a
+>> cat /etc/issue
+
+# Launch Specific ubuntu Version
+
+>> lxc  launch ubuntu:21.04 hirsute
+>> lxc exec hirsute -- cat /etc/issue
+>> lxc exec hirsute -- lsb_release -a
+
+## Available Linux Container Images
+
+See here --> https://us.lxd.images.canonical.com
+
+# Create Alpine Container
+
+>> lxc launch images:alpine/3.10/amd64 alpine
+>> lxc list
+>> lxc exec alpine -- cat /etc/issue
+>> lxc exec alpine -- lsb_release -a
+
+Exercise create a centos 8 container
