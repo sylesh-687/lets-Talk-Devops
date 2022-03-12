@@ -1,6 +1,6 @@
 # Commands
 
-# Install LXD
+Install LXD
 >>   sudo apt install lxd -y
 
 # Intialize LXD
