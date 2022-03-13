@@ -1,0 +1,18 @@
+# Adhoc Commands
+>> ansible -i hosts all -m ping
+>> ansible -i hosts <groupname> -m ping -u <username>
+
+
+# Execute Remote commands
+>> ansible -i hosts <groupname> -a "echo /etc/issue"
+
+#Tasks 1
+#Rebook a remote system without logging in t
+#
+>> ansible -i hosts <groupname> -m copy -a "src=/home/shaileshthakur/testfile dest=/tmp/"
+
+>> ansible -i hosts <groupname> -m file -a "dest=/tmp/testfile state=absent"
+
+>> ansible -i hosts <groupname> -m user -a "name=<abc> state=absent"
+
+>> ansible -i hosts <groupname> -m apt -a "name=nginx state=present"
